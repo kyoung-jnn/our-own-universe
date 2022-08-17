@@ -3,7 +3,8 @@
 # Universe in Three.js
 
 - Solar System (If possible, Kepler's Law 🙄)
-- Using [James Webb space telescope](https://www.jwst.nasa.gov/) Image 
+- [Sketchfab Free 3D model](https://sketchfab.com/store)
+- Using [James Webb space telescope](https://www.jwst.nasa.gov/) Image
 
 ## 🛠 Dependencies
 
