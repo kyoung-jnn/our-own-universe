@@ -3,24 +3,24 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 2143,
+      "count": 3223,
       "max": [
-        5.0,
-        5.0,
-        5.0
+        0.999999463558197,
+        0.9999982118606567,
+        1.0
       ],
       "min": [
-        -5.0,
-        -5.0,
-        -5.0
+        -0.9999986290931702,
+        -0.999998927116394,
+        -1.0
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 25716,
+      "byteOffset": 38676,
       "componentType": 5126,
-      "count": 2143,
+      "count": 3223,
       "max": [
         1.0,
         1.0,
@@ -34,133 +34,113 @@
       "type": "VEC3"
     },
     {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 2143,
-      "max": [
-        1.0,
-        1.0,
-        0.024549409747123718,
-        1.0
-      ],
-      "min": [
-        -1.0,
-        -1.0,
-        -0.02454940602183342,
-        1.0
-      ],
-      "type": "VEC4"
-    },
-    {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 2143,
+      "count": 3223,
       "max": [
-        0.9999994039535522,
+        1.0,
         1.0
       ],
       "min": [
         0.0,
-        -2.384185791015625e-07
+        0.0
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 11904,
+      "count": 17664,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "SebastianSosnowski (https://sketchfab.com/SebastianSosnowski)",
+      "author": "Akshat (https://sketchfab.com/shooter24994)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/mercury-planet-ccb6c6a9ac3742109cc67c0f16032b49",
-      "title": "Mercury (planet)"
+      "source": "https://sketchfab.com/3d-models/mercury-32347fa4ec1a4987b71f461a401d91c4",
+      "title": "Mercury"
     },
-    "generator": "Sketchfab-12.68.0",
+    "generator": "Sketchfab-12.65.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 47616,
+      "byteLength": 70656,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 17144,
-      "byteOffset": 47616,
+      "byteLength": 25784,
+      "byteOffset": 70656,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 51432,
-      "byteOffset": 64760,
+      "byteLength": 77352,
+      "byteOffset": 96440,
       "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 34288,
-      "byteOffset": 116192,
-      "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 150480,
+      "byteLength": 173792,
       "uri": "scene.bin"
     }
   ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
   "images": [
     {
-      "uri": "textures/Material_50_baseColor.jpeg"
-    },
-    {
-      "uri": "textures/Material_50_metallicRoughness.png"
-    },
-    {
-      "uri": "textures/Material_50_normal.png"
+      "uri": "textures/Material.002_diffuse.jpeg"
     }
   ],
   "materials": [
     {
-      "name": "Material_50",
-      "normalTexture": {
-        "index": 2,
-        "scale": 0.5931783536585366
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0.0,
-        "metallicRoughnessTexture": {
-          "index": 1
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.19595917942265426,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
         }
-      }
+      },
+      "name": "Material.002"
     }
   ],
   "meshes": [
     {
-      "name": "Sphere001_Material #50_0",
+      "name": "Sphere_Material.002_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TANGENT": 2,
-            "TEXCOORD_0": 3
+            "TEXCOORD_0": 2
           },
-          "indices": 4,
+          "indices": 3,
           "material": 0,
           "mode": 4
         }
@@ -214,7 +194,7 @@
         0.0,
         1.0
       ],
-      "name": "e5cb41e1131244429e5b1c3205a722c6.fbx"
+      "name": "d866ec1ebc5242fc9442ea81b92de172.fbx"
     },
     {
       "children": [
@@ -227,28 +207,28 @@
         4
       ],
       "matrix": [
-        1.0,
+        100.0,
         0.0,
         0.0,
         0.0,
         0.0,
-        2.220446049250313e-16,
-        -1.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
         0.0,
         0.0,
-        1.0,
-        2.220446049250313e-16,
+        99.99999999999868,
+        -1.629206793918314e-05,
         0.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "name": "Sphere001"
+      "name": "Sphere"
     },
     {
       "mesh": 0,
-      "name": "Sphere001_Material #50_0"
+      "name": "Sphere_Material.002_0"
     }
   ],
   "samplers": [
@@ -272,14 +252,6 @@
     {
       "sampler": 0,
       "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
     }
   ]
 }

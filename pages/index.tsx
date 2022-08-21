@@ -1,20 +1,28 @@
 import type { NextPage } from "next";
+import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
-import Sun from "@/components/models/Sun";
+import Stars from "@/components/background/Stars";
+import CameraController from "@/components/CameraController";
+import Light from "@/components/background/Light";
+import Planet from "@/components/Planet";
+import { planetsData } from "@/database/planetsData";
 
 const Home: NextPage = () => {
-  const canvasRef = useRef(null);
-  useEffect(() => {}, [canvasRef]);
-
   return (
-    <div>
-      <Canvas>
-        <ambientLight intensity={0.2} />
-        <directionalLight />
-        <Sun />
-      </Canvas>
-    </div>
+    <Canvas>
+      <CameraController />
+      {/* Light */}
+      <Light />
+      {/* Backgrounds */}
+      <Stars />
+      <primitive object={new THREE.AxesHelper(10)} />
+      {/* Objects */}
+      <>
+        {planetsData.map((planet) => (
+          <Planet key={planet.id} data={planet} />
+        ))}
+      </>
+    </Canvas>
   );
 };
 
