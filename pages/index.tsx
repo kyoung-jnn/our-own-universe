@@ -5,6 +5,7 @@ import Stars from "@/components/background/Stars";
 import CameraController from "@/components/CameraController";
 import Light from "@/components/background/Light";
 import Planet from "@/components/Planet";
+import Orbit from "@/components/Orbit";
 import { planetsData } from "@/database/planetsData";
 
 const Home: NextPage = () => {
@@ -19,7 +20,10 @@ const Home: NextPage = () => {
       {/* Objects */}
       <>
         {planetsData.map((planet) => (
-          <Planet key={planet.id} data={planet} />
+          <>
+            <Planet key={planet.id} data={planet} />
+            <Orbit xRadius={planet.orbitRadius} zRadius={planet.orbitRadius} />
+          </>
         ))}
       </>
     </Canvas>
